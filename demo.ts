@@ -23,3 +23,37 @@ function tsDemo2(data: Point) {
 }
 console.log('1');
 tsDemo2({ x: 1, y: 123 });
+
+// 静态类型的深刻理解
+
+const count: number = 2020;
+
+// 当定义一个静态类型变量的时候，使用该变量，他会有该类型的属性与方法
+
+// const point: Point = {
+// 	x: 3,
+// 	y: 4
+// };
+// point.x
+
+// 基础类型 null, undefined,symbol,boolean,string,void
+const count1: number = 123;
+const name1: string = 'dell';
+
+// 对象类型
+class Person {}
+const teachear: {
+	name: string,
+	age: number
+} = {
+	name: 'dell',
+	age: 18
+};
+
+const numbers: number[] = [1, 2, 3];
+
+const dell: Person = new Person();
+
+const getTatal: () => number = () => {
+	return 123;
+};
