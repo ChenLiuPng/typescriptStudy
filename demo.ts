@@ -117,3 +117,8 @@ function getNumber({ first }: { first: number }): number {
 
 const total4 = add2({ first: 1, second: 2 });
 const total5 = getNumber({ first: 1 });
+
+// 基础类型复习
+// number string void null undeifned symbol boolean
+
+// 对象类型 {} class function []
