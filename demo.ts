@@ -85,3 +85,35 @@ const obj = {
 	name: 'dell',
 	age: 18
 };
+
+// 函数类型
+// 必须加上返回值类型
+function add(first: number, second: number): number {
+	return first + second;
+}
+
+const total3 = add(1, 2);
+
+function sayHello(): void {
+	console.log('hello');
+}
+// never 永远都不可能执行完成
+function errorEmitter(): never {
+	throw new Error();
+	console.log(123);
+}
+
+function errorEmitter1(): never {
+	while (true) {}
+}
+
+function add2({ first, second }: { first: number, second: number }): number {
+	return first + second;
+}
+
+function getNumber({ first }: { first: number }): number {
+	return first;
+}
+
+const total4 = add2({ first: 1, second: 2 });
+const total5 = getNumber({ first: 1 });
